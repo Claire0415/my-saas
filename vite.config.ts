@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // 默认值为 '/'，适用于大多数情况
+  base: '/my-saas/', // 默认值为 '/'，适用于大多数情况
   build: {
     outDir: './dist',
   },
