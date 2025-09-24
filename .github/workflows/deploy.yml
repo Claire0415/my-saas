@@ -33,7 +33,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # 构建输出的目录，根据你的项目配置调整
+          publish_dir: ./dist  # 构建产物的目录
+          publish_branch: gh-pages  # 发布的分支
+          destination_dir: dist  # 将产物推送到 gh-pages 分支的 /dist 子目录
           keep_files: true  # 保留之前部署的文件
 
       # 6. 生成预览链接（可选）
