@@ -33,7 +33,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # 构建输出的目录，根据你的项目配置调整
+          publish_dir: ./dist  # 构建输出的目录，根据你的项目配置调整
+          publish_branch: main
           keep_files: true  # 保留之前部署的文件
 
       # 6. 生成预览链接（可选）
