@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Icon } from '@hg-data/hg-web-icon';
+
+console.log('===========',Icon);
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +20,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React1111</h1>
+      <div className='test'>
+      <Icon name="react" size={20} color='red'/>
+      </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
